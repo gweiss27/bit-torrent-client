@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/gweiss27/bit-torrent-client/issues"
   },
-  "homepage": "https://github.com/gweiss27/bit-torrent-client#readme"
+  "homepage": "https://github.com/gweiss27/bit-torrent-client#readme",
+  "dependencies": {
+    "bencode": "^2.0.1"
+  }
 }
