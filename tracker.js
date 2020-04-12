@@ -39,11 +39,19 @@ const getPeers = (torrent, callback) => {
     });
 };
 
+/**
+ * udpSend is just a convenience function that mostly just calls socket.send
+ * but lets me avoid having to set the offset and length arguments
+ */
 function udpSend(socket, message, rawUrl, callback = () => {}) {
     const url = urlParse(rawUrl);
     socket.send(message, 0, message.length, url.port, url.host, callback);
 }
 
+/**
+ * respType will check if the response was for the connect or the announce request.
+ * Since both responses come through the same socket, we want a way to distinguish them.
+ */
 function respType(resp) {
     // ...
 }
@@ -64,4 +72,4 @@ function parseAnnounceResp(resp) {
     // ...
 }
 
-module.exports = getPeers;
+module.exports.getPeers = getPeers;
