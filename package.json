@@ -1,0 +1,19 @@
+{
+  "name": "bit-torrent-client",
+  "version": "1.0.0",
+  "description": "Custom BitTorrent Client using Node.js (from https://allenkim67.github.io/programming/2016/05/04/how-to-make-your-own-bittorrent-client.html)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gweiss27/bit-torrent-client.git"
+  },
+  "author": "Gregory Weiss",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gweiss27/bit-torrent-client/issues"
+  },
+  "homepage": "https://github.com/gweiss27/bit-torrent-client#readme"
+}
