@@ -59,7 +59,9 @@ function udpSend(socket, message, rawUrl, callback = () => {}) {
  * Since both responses come through the same socket, we want a way to distinguish them.
  */
 function respType(resp) {
-    // ...
+    const action = resp.readUInt32BE(0);
+    if (action === 0) return 'connect';
+    if (action === 1) return 'announce';
 }
 
 /**

@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/gweiss27/bit-torrent-client#readme",
   "dependencies": {
-    "bencode": "^2.0.1"
+    "bencode": "^2.0.1",
+    "bigint-buffer": "^1.1.5"
   }
 }
